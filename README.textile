@@ -1,0 +1,1 @@
+Gets the current bestseller list from readings.com.au - an independent bookshop in Melbourne, Australia. If you use this please link back to Readings as they are a fantastic independent book seller.
