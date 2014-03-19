@@ -8,7 +8,7 @@ root = lxml.html.fromstring(html)
 
 pos = 0
 
-for el in root.cssselect("div.shelf-grid__products a"):
+for el in root.cssselect("div.shelf-grid__products a div.shelf-grid-product__details"):
     title   = el.cssselect("h4.shelf-grid-product__title")[0].text_content()
     author  = el.cssselect("p.grid-product__author")[0].text_content()
     link    = el.cssselect("a")[0].attrib['href']
