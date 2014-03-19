@@ -8,10 +8,10 @@ root = lxml.html.fromstring(html)
 
 pos = 0
 
-for el in root.cssselect("div.productDetails"):
-    title   = el.cssselect("span.title")[0].text_content()
-    author  = el.cssselect("span.author")[0].text_content()
-    link    = el.cssselect("span.title a")[0].attrib['href']
+for el in root.cssselect("div.shelf-grid__products"):
+    title   = el.cssselect("h4.shelf-grid-product__title")[0].text_content()
+    author  = el.cssselect("p.grid-product__author")[0].text_content()
+    link    = el.cssselect("a")[0].attrib['href']
     isbn    = link.split("/")[2]
     pos += 1
 
