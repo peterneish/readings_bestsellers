@@ -15,9 +15,9 @@ for el in root.cssselect("div.shelf-grid__products a"):
     isbn    = link.split("/")[2]
     pos += 1
 
-    print title
-    print author
-    print link
+    #print title
+    #print author
+    #print link
     print isbn
     link = "http://www.readings.com.au" + link
     
