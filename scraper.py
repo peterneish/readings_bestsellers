@@ -15,7 +15,7 @@ for el in root.cssselect("div.shelf-grid__products a"):
     isbn    = link.split("/")[2]
     pos += 1
 
-    print title
+    print unicode(title, errors='ignore')
     #print author
     #print link
     print isbn
